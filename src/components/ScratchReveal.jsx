@@ -187,8 +187,8 @@ export default function ScratchReveal({ onRevealed }) {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-full w-full flex flex-col items-center justify-center p-6 text-center z-10 overflow-hidden"
-    >
+        className="relative min-h-full w-full flex flex-col items-center justify-center p-4 text-center z-10"
+      >
       {isRevealed && (
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden transition-opacity duration-1000 opacity-100">
           {[...Array(12)].map((_, i) => (
