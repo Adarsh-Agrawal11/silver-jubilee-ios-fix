@@ -23,9 +23,9 @@ export default function App() {
     inactivityTimer.current = setTimeout(() => {
       if (gateOpened && scrollContainerRef.current) {
         scrollContainerRef.current.scrollBy({
-          top: window.innerHeight * 0.85,
-          behavior: 'smooth',
-        });
+        top: scrollContainerRef.current.clientHeight,
+        behavior: 'smooth',
+     });
       }
     }, 6000);
   };
