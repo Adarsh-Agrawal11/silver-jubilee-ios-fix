@@ -53,16 +53,16 @@ export default function App() {
       {gateOpened && (
         <div
           ref={scrollContainerRef}
-          className="relative z-10 h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth"
+          className="relative z-10 h-[100dvh] overflow-y-auto snap-y snap-proximity scroll-smooth"
         >
-          <div className="snap-start h-screen w-full flex items-center justify-center">
+          <div className="snap-start h-[100dvh] w-full flex items-center justify-center">
             <HeroScene />
           </div>
-          <div className="snap-start h-screen w-full flex items-center justify-center">
+          <div className="snap-start h-[100dvh] w-full flex items-center justify-center">
             <ScratchReveal onRevealed={handleReveal} />
           </div>
           {revealed && (
-            <div ref={celebrationRef} className="snap-start h-screen w-full flex items-center justify-center">
+            <div ref={celebrationRef} className="snap-start min-h-[100dvh] w-full flex items-center justify-center">
               <FinalCelebration />
             </div>
           )}
