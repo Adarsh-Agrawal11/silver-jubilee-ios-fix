@@ -58,8 +58,8 @@ export default function App() {
           <div className="snap-start h-[100dvh] w-full flex items-center justify-center">
             <HeroScene />
           </div>
-          <div className="snap-start h-[100dvh] w-full flex items-center justify-center">
-            <ScratchReveal onRevealed={handleReveal} />
+          <div className="snap-start min-h-[100dvh] w-full flex items-center justify-center py-4">
+              <ScratchReveal onRevealed={handleReveal} />
           </div>
           {revealed && (
             <div ref={celebrationRef} className="snap-start min-h-[100dvh] w-full flex items-center justify-center">
